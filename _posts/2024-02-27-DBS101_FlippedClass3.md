@@ -1,7 +1,7 @@
 ---
 Title: DBS101 Flipped class 
 categories: [DBS101, Flipped class 3]
-Tags: DBS 101
+tags: DBS 101
 Date: 27/2/2024
 ---
 #  Null values and Set operations in SQL.

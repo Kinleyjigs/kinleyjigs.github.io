@@ -1,7 +1,7 @@
 ---
 Title: DBS101 Flipped class 
 categories: [DBS101, Flipped class]
-Tags: DBS 101
+tags: DBS 101
 ---
 ### Database Users and Administators
 ----

@@ -1,7 +1,7 @@
 ---
 Title: DBS101 Flipped class 
 categories: [DBS101, Flipped class 2]
-Tags: DBS 101
+tags: DBS 101
 Date: 20/2/2024
 ---
 ### Entity relational model 
