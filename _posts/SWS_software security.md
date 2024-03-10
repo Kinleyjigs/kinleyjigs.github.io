@@ -1,5 +1,5 @@
 ---
-Title: SWS101  
+Title: SWS101 Flipped_class
 categories: [SWS101,Flipped_1]
 tags: SWS 101
 ---
