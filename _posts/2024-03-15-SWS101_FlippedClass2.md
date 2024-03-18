@@ -61,6 +61,21 @@ Redis (Remote Dectionary Server) :is an open-source advanced NoSQL key-value dat
 ## Tire 1
 ### Appointment 
 #### Gaining Access to the System
-Firstly i spawn the machine and got the target ip address.then ping the ip address and did a simple scan.
+![appoinment](/assets/img/appoinment.png)
+![appoinment](/assets/img/appoi_https.png)
+Firstly, I spawned the machine and obtained the target IP address. Then, I pinged the IP address and conducted a simple scan. I discovered that port 80 is open, and the version running on it is Apache httpd 2.4.38 (Debian). The standard port used for the HTTPS protocol is 443. I copied my IP address and pasted it into the browser, which navigated to a login page where the SQL injection vulnerability occurs.
 
-### Learning Through the Appoinment Machine
+The SQL query is attempting to retrieve data from a table named "users" where the username is equal to the string "$username" and the password is equal to the string "$password123". Since it is a user-controlled application, we can manipulate the username and password. So, when I change the username from 'username' to 'admin#' it will automatically comment out the query. Thus, I entered 'admin#' as the username and typed anything for the password, thereby obtaining the root flag.
+
+![appoinment](/assets/img/username.png)
+
+![appoinment](/assets/img/admin.png)
+
+![admin](/assets/img/admin11.png)
+![flag](/assets/img/flag.png)
+
+#### Learning Through the Appoinment Machine
+* directory is called as folder in web-application termilogy.
+* gobuster: a fast brute-force tool to discover hidden URLs, files, and directories within websites. This will help us to remove/secure hidden files and sensitive data.
+* SQL injection, also known as SQLI, is a common attack vector that uses malicious SQL code for backend database manipulation to access information that was not intended to be displayed.
+
