@@ -12,8 +12,6 @@ The Flipped Class session focused on null values and set operations in SQL. Grou
 
 #### Things Learned in Flipped class 
 ---
-
-
 #### Null Values 
 In flipped class we learned about the null values and set operators.
 Firstly a null value is distinct from an empty field filled with spaces. It occurs when a field is left blank during record creation. Setting a NULL value is appropriate when the actual value is unknown or meaningless. NULL is not equivalent to zero for numeric data types or to spaces for character data types. If a column contains a NULL value, SQL constraints such as UNIQUE, FOREIGN KEY, and CHECK will be ignored. To check for null values, we use "IS NULL" and "IS NOT NULL." "IS NULL" returns true if the value is NULL, while "IS NOT NULL" returns true if the value is not NULL.
