@@ -107,9 +107,19 @@ The SQL query is attempting to retrieve data from a table named "users" where th
 
 ### Sequel
 #### Gaining Access to the System
-I Spawn the sequel machine, ping the the ip address like before, and scaned the target ip address.
+I Spawn the sequel machine, ping the the ip address like before, and scaned the target ip address.The port 3306 is open and it is serving MySQL and MariaDB is the version on the community-developed MySQL.
 
 ![se](/assets/img/sequelscan.png)
-The port 3306 is open and it is serving MySQL and MariaDB is the version on the community-developed MySQL.
 
+Then i get into the MariaDB database 
 ![seq](/assets/img/sql.png)
+
+At moment,the database is set to none.So I list the database and there are 4  database.I  logged in into 'htb'. Under that there is two tables.that is 'config' and 'user' 
+![seq](/assets/img/htb.png)
+
+i displayed everything inside the config table from which i got the root flag.
+![sequel](/assets/img/config.png)
+
+#### Learning Through the Sequel Machine
+* 'mysql -h 10.129.130.255 -u root' This command attempts to connect to a MySQL database server located at the IP address 10.129.130.255 using the username "root".
+* '*' - it is the symbol that is used to specify within the query that we want to display everything inside a table.
