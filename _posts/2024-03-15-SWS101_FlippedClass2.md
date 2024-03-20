@@ -122,4 +122,5 @@ i displayed everything inside the config table from which i got the root flag.
 
 #### Learning Through the Sequel Machine
 * 'mysql -h 10.129.130.255 -u root' This command attempts to connect to a MySQL database server located at the IP address 10.129.130.255 using the username "root".
-* '*' - it is the symbol that is used to specify within the query that we want to display everything inside a table.
+* ' * ' - it is the symbol that is used to specify within the query that we want to display everything inside a table.
+
