@@ -124,3 +124,40 @@ i displayed everything inside the config table from which i got the root flag.
 * 'mysql -h 10.129.130.255 -u root' This command attempts to connect to a MySQL database server located at the IP address 10.129.130.255 using the username "root".
 * ' * ' - it is the symbol that is used to specify within the query that we want to display everything inside a table.
 
+### Crocodile 
+#### Gaining Access to the System
+After I spawn the machine i got the ip address of the crocodile machine and again ping the machine.
+
+![croc](/assets/img/pingcroc.png)
+
+Then I did the necessary scan.Two ports are open that are vsftpd 3.0.3 and  Apache httpd 2.4.41.
+
+![alt text](crocscan.png)
+
+Then I login to the ftp server and download the files there.There is two file in there that are allowed.userlist and allowed.userlist.passwd.
+
+![croc](/assets/img/ftp_croc.png)
+
+Inside that i saw a lists of username and password
+
+![croc](/assets/img/userlist.png)
+![croc](/assets/img/userlistpass.png)
+
+Then i run a directory scan using gobuster
+
+![croc](/assets/img/gobuster.png)
+
+Then there is a /dashbord link where it will take us to a page where we have to enter a username and a password.
+
+![croc](/assets/img/dashbord.png)
+
+Then I used hydra to brute force the username and password in attempt to log in to the web application at m ip address using the login form at /login.php.Then i got my username and password.
+
+![croc](/assets/img/hydra.png)
+
+finally i got my root flag.
+![croc](/assets/img/flagcroc.png)
+
+#### Learning Through the crocodile Machine
+gobuster:it is a powerful tool used for brute-forcing URIs (directories and files) in websites, DNS subdomains, virtual host names on target web servers, and more
+hydra:This command is designed to perform a brute-force attack on a web application's login form using HTTP POST requests.
