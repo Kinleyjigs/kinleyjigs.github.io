@@ -18,14 +18,14 @@ Firstly a null value is distinct from an empty field filled with spaces. It occu
 
 #### Example 
 #### IS NULL Operator
-![Table NULL OPERATOR](/assets/img/image.png)
+![alt text](../Image/image.png)
 
 Suppose we find the Fname and Lname of the Employee having no Super_ssn then the query will be
 
 #### SELECT Fname, Lname FROM Employee WHERE SSN IS NULL;
 
 #### Output:
-![IS NULL](/assets/img/image-1.png)
+![alt text](../Image/image-1.png)
 
 #### IS NOT NULL Operator
 
@@ -34,7 +34,7 @@ Now if we find the Count of number of Employees having SSNs.
 SELECT COUNT(*) AS Count FROM Employee WHERE SSN IS NOT NULL;
 
 #### Output:
-![IS NOT NULL](/assets/img/image-2.png)
+![alt text](../Image/image-2.png)
 #### Set operators
 Set operators are special type of operators which are used to combine the result of two queries. Types of set operators are union, union all, intersect and minus.
 SQL Union combines the results of multiple SELECT queries. It requires that the number of columns and their data types match across tables. Union eliminates duplicate rows from the result set.

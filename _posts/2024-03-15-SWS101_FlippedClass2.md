@@ -7,31 +7,31 @@ tags: SWS 101
 ### Connecting to the HTB VPN 
 Before starting the hack the box challanges i connected to the VPN of US server by downloading the VPN(.ovpn) configuration file and run it into the terminal.
 
-![starting machine](/assets/img/start_machine.png)
+![alt text](../Image/start_machine.png)
 
 ## Tire 0 
 ### MEOW 
 #### Gaining Access to the System
 Firstly I spawn the meow machine.
 
-![spawn](/assets/img/spawn.png)
+![alt text](../Image/spawn.png)
 
 Then I got the target ip address.
 
-![ipaddress](/assets/img/ipaddress.png)
+![alt text](../Image/ipaddress.png)
 
 To test whether i am connected to the machine i ping the ip address.
 
-![ping](/assets/img/ping.png)
+![alt text](../Image/ping.png)
 
 After that i scan the machine and found out service i was running was telnet.
 
-![port23](/assets/img/port23.png)
+![alt text](../Image/port23.png)
 
 i log into the target over telnet with a blank password that is root and list what ae inside that file and thus got the root flag.
 
-![telnet](/assets/img/telnet.png)
-![flag](/assets/img/cat.png)
+![alt text](../Image/telnet.png)
+![alt text](../Image/cat.png)
 
 #### Learning Through the Meow Machine
 New things learned in this machine are:
@@ -45,12 +45,12 @@ New things learned in this machine are:
 #### Gaining Access to the System
 like before i spawn the machine, got the target ip address and ping the ip address to see if i can communicate with the machine.
 
-![fawn](/assets/img/fawn.png)
+![alt text](../Image/fawn.png)
 
 After that i scan the version of the machine running on using -sV.I also used the -F command this command can scan the machine faster by scanning few important parts.
 In this machine key task was to login into the root user using anonymous username and a random password. then i logged in and list the files and download it and the submited the root flag.
 
-![fawnn](/assets/img/fawn_ftp.png)
+![alt text](../Image/fawn_ftp.png)
 
 #### Learning Through the FAWN Machine
 things learned in this machine are:
@@ -63,19 +63,19 @@ things learned in this machine are:
 #### Gaining Access to the System
 like before i spawn the machine and got the target ip address of dancing machine.In my scan 3 ports are detected.The port 445/tcp is open and running on microsoft-ds which includes SMB functionality.
 
-![DANCING](/assets/img/dancingscan.png)
+![alt text](../Image/dancingscan.png)
 
 We used smblicient to exploit SMB service in this machine.i found 4 sharename.
 
-![DANCING](/assets/img/smbclient.png)
+![alt text](../Image/smbclient.png)
 
 "workshares" is the only sharename containing file.
 
-![DANCING](/assets/img/undersmb.png)
+![alt text](../Image/undersmb.png)
 
 So, I tried navigating to the workspace and found out that there are 2 user directories, 'Amy.J' and 'James.P'.under user James.P i found a flag.txt file which i downloaded it using get and retrive it using cat got the root flag.
 
-![DANCING](/assets/img/workshares.png)
+![alt text](../Image/workshares.png)
 
 #### Learning Through the Dancing Machine
 * SMB(server message block):it is a client-server communication protocol used for sharing access to files, printers, serial ports and other resources on a network.
@@ -85,7 +85,7 @@ So, I tried navigating to the workspace and found out that there are 2 user dire
 like usual I spawn machine,ping the ip address of the target machine.scan the virsion of the machine.
 after the scan redis service is running on the 6379 port that is open on the machine.
 
-![redis](/assets/img/redis.png)
+![alt text](../Image/redis.png)
 
 Then I connected to the Redis server using redis-cli -h command, but in here i first get into the root user. root user  is something has a high access over the the system.after getting the info about the redis server i came to know there are 4 keys i used get command and got the root flag.
 
@@ -98,15 +98,15 @@ Then I connected to the Redis server using redis-cli -h command, but in here i f
 #### Gaining Access to the System
 Firstly, I spawned the machine and obtained the target IP address. Then, I pinged the IP address and conducted a simple scan.I discovered that port 80 is open, and the version running on it is Apache httpd 2.4.38 (Debian). The standard port used for the HTTPS protocol is 443. I copied my IP address and pasted it into the browser, which navigated to a login page where the SQL injection vulnerability occurs.
 
-![appoinment](/assets/img/appoinment.png)
+![alt text](../Image/appoinment.png)
 
 The SQL query is attempting to retrieve data from a table named "users" where the username is equal to the string "$username" and the password is equal to the string "$password123". Since it is a user-controlled application, we can manipulate the username and password. So, when I change the username from 'username' to 'admin#' it will automatically comment out the query. Thus, I entered 'admin#' as the username and typed anything for the password, thereby obtaining the root flag.
 
-![appoinment](/assets/img/username.png)
-![appoinment](/assets/img/admin.png)
+![alt text](../Image/username.png)
+![alt text](../Image/admin.png)
 
-![admin](/assets/img/admin11.png)
-![flag](/assets/img/flag.png)
+![alt text](../Image/admin11.png)
+![alt text](../Image/flag.png)
 
 #### Learning Through the Appoinment Machine
 * directory is called as folder in web-application termilogy.
@@ -117,19 +117,19 @@ The SQL query is attempting to retrieve data from a table named "users" where th
 #### Gaining Access to the System
 I Spawn the sequel machine, ping the the ip address like before, and scaned the target ip address.The port 3306 is open and it is serving MySQL and MariaDB is the version on the community-developed MySQL.
 
-![se](/assets/img/sequelscan.png)
+![alt text](../Image/sequelscan.png)
 
 Then i get into the MariaDB database 
 
-![seq](/assets/img/sql.png)
+![alt text](../Image/sql.png)
 
 At moment,the database is set to none.So I list the database and there are 4  database.I  logged in into 'htb'. Under that there is two tables.that is 'config' and 'user' 
 
-![seq](/assets/img/htb.png)
+![alt text](../Image/htb.png)
 
 i displayed everything inside the config table from which i got the root flag.
 
-![sequel](/assets/img/confi.png)
+![alt text](../Image/confi.png)
 
 #### Learning Through the Sequel Machine
 * 'mysql -h 10.129.130.255 -u root' This command attempts to connect to a MySQL database server located at the IP address 10.129.130.255 using the username "root".
@@ -139,37 +139,37 @@ i displayed everything inside the config table from which i got the root flag.
 #### Gaining Access to the System
 After I spawn the machine i got the ip address of the crocodile machine and again ping the machine.
 
-![croc](/assets/img/pingcroc.png)
+![alt text](../Image/pingcroc.png)
 
 Then I did the necessary scan.Two ports are open that are vsftpd 3.0.3 and  Apache httpd 2.4.41.
 
-![croc1](/assets/img/crocscan.png)
+![alt text](../Image/crocscan.png)
 
 Then I login to the ftp server and download the files there.There is two file in there that are allowed.userlist and allowed.userlist.passwd.
 
-![croc2](/assets/img/ftp_croc.png)
+![alt text](../Image/ftp_croc.png)
 
 Inside that i saw a lists of username and password
 
-![croc3](/assets/img/userlist.png)
+![alt text](../Image/userlist.png)
 
-![croc4](/assets/img/userlistpass.png)
+![alt text](../Image/userlistpass.png)
 
 Then i run a directory scan using gobuster
 
-![croc5](/assets/img/gobuster.png)
+![alt text](../Image/gobuster.png)
 
 Then there is a /dashbord link where it will take us to a page where we have to enter a username and a password.
 
-![croc6](/assets/img/dashbord.png)
+![alt text](../Image/dashbord.png)
 
 Then I used hydra to brute force the username and password in attempt to log in to the web application at m ip address using the login form at /login.php.Then i got my username and password.
 
-![croc7](/assets/img/hydra.png)
+![alt text](../Image/hydra.png)
 
 finally i got my root flag.
 
-![croc8](/assets/img/flagcroc.png)
+![alt text](../Image/flagcroc.png)
 
 #### Learning Through the crocodile Machine
 * gobuster:it is a powerful tool used for brute-forcing URIs (directories and files) in websites, DNS subdomains, virtual host names on target web servers, and more
