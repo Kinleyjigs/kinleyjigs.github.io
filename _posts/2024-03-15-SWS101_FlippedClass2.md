@@ -370,6 +370,6 @@ finally i got my root flag.
 ![croc8](/assets/img/flagcroc.png)
 
 #### Learning Through the crocodile Machine
-gobuster:it is a powerful tool used for brute-forcing to discover hidden URIs (directories and files) in websites, DNS subdomains, virtual host names on target web servers.
-hydra:This command is designed to perform a brute-force attack on a web application's login form using HTTP POST requests.
+* gobuster:it is a powerful tool used for brute-forcing to discover hidden URIs (directories and files) in websites, DNS subdomains, virtual host names on target web servers.
+* hydra:This command is designed to perform a brute-force attack on a web application's login form using HTTP POST requests.
 
