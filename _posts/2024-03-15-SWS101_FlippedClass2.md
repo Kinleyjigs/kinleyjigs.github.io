@@ -139,7 +139,7 @@ i displayed everything inside the config table from which i got the root flag.
 #### Gaining Access to the System
 After I spawn the machine i got the ip address of the crocodile machine and again ping the machine.
 
-![croc1](/assets/img/pingcroc.png)
+![croc](/assets/img/pingcroc.png)
 
 Then I did the necessary scan.Two ports are open that are vsftpd 3.0.3 and  Apache httpd 2.4.41.
 
