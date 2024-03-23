@@ -129,7 +129,7 @@ At moment,the database is set to none.So I list the database and there are 4  da
 
 i displayed everything inside the config table from which i got the root flag.
 
-![sequel](/assets/img/config.png)
+![sequel](/assets/img/confi.png)
 
 #### Learning Through the Sequel Machine
 * 'mysql -h 10.129.130.255 -u root' This command attempts to connect to a MySQL database server located at the IP address 10.129.130.255 using the username "root".
