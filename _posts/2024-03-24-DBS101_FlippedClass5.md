@@ -22,7 +22,7 @@ For example,
 
 ![alt text](../Image/FNF1.png)
 
-The above table fails to pass the First Normal form though different names, The order in which we save data doesn't matter, the columns hold values of the same type like customer name has all the names.It is because Fruits column holds multiple comma-separated values, while as per the First Normal form, each column should have a single value.
+The table mentioned above does not meet the criteria for the First Normal Form. Despite containing distinct names and regardless of the order in which the data is stored, the columns maintain consistent values of the same type, such as all customer names. However, the issue arises from the "Fruits" column, which stores multiple comma-separated values. According to the First Normal Form, each column should hold only a single value.
 
 So Inorder to pass the First Normal form, we have to create another column with a single value.
 
