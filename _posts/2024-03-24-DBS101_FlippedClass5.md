@@ -10,7 +10,7 @@ In this Flipped Class journal, we aim to explore normalization and the different
 ### Normalization
 **Normalization** is a method used to structure data in database tables to reduce data redundancy. It involves breaking down a large dataset into smaller tables and establishing appropriate relationships between them.
 
-## Types of normal form 
+## Types of Normal Form 
 ###  First Normal Form(1NF)
 For a table to be in the First Normal Form:
 * It should only have single(atomic) valued attributes/columns. 
