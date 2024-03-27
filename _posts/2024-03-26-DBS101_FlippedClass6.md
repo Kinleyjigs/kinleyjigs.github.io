@@ -46,8 +46,19 @@ for example;
 * ### Vector Databases
 A vector database is similar to a well-organized file system for geographical data, such as maps and locations. It makes it easier to discover and analyze points, lines, and shapes on a map, which is useful for navigation apps, GIS, and mapping services.
 
+for example; the diagram below is a representation of how the vector datatabse typically looks like, it consists of structured tables containing spatial data, such as points, lines, and polygons. Each table holds attributes of these objects, like coordinates and names.
+
+![alt text](../Image/vector.png)
+
 * ### Time-series Databases
 A time series database is like a special notebook that keeps track of events as they happen, organizing them by time. It's great for things like tracking sensor data, stock prices over time, or even your daily step count.
 
+for example; the following diagram is a time series of temperature over time usually depicted as a line graph, with time on the x-axis and temperature on the y-axis. Each point on the line represents a temperature measurement at a specific time.
+
+![alt text](../Image/time-series.webp)
+
 * ### Column oriented Databases
 A column-oriented database is like organizing information by columns rather than rows, making it faster for certain types of data analysis, like finding averages or totals for specific categories.
+
+for example; the following diagram is a column-oriented database because in here the data is organized by columns rather than rows. Each column holds values for a specific attribute, allowing for efficient analysis of individual attributes across multiple records
+![alt text](../Image/column-oriented.png)
