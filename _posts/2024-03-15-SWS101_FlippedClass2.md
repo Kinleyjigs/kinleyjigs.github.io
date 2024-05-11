@@ -35,7 +35,7 @@ i log into the target over telnet with a blank password that is root and list wh
 
 #### Learning Through the Meow Machine
 New things learned in this machine are:
-* nmap: it is a network scanning tool. 
+* nmap: it is a network scanning tool.  
 * openvpn: it is the service that we used to form our vpn connection into HTB labs.
 * ICMP echo request (Internet Control Message Protocol): it also known as ping messages.it is mostly used as a troubleshooting tool to see the connection between devices.
 * telnet: Telnet is a very vulnerable service to run on any machine. It allows anonymous login sometimes, misconfigurations, and weak passwords.i found out service i was running on was telnet.
