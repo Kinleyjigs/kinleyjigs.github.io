@@ -52,8 +52,8 @@ Traffic analysis means watching and studying how data moves around a network to 
 
 #### The two main techniques used in Traffic Analysis:
 |Flow Analysis | Packet Analysis |
-|--------------|--------------|
-|It's about gathering data from network devices to get statistics without diving into every single detail.        |   This is about grabbing all network data and deeply investigating each packet to catch and block any suspicious or harmful ones |
+| -------------- | -------------- |
+|It's about gathering data from network devices to get statistics without diving into every single detail. |   This is about grabbing all network data and deeply investigating each packet to catch and block any suspicious or harmful ones |
 | Advantage: Easy to collect and analyse. | Advantage: Provides full packet details to get the root cause of a case.|
 | Challenge: Doesn't provide full packet details to get the root cause of a case. | Challenge: Requires time and skillset to analyse. |
 
