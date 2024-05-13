@@ -51,11 +51,7 @@ Managed Security Services (MSS) are outsourced security services provided by Man
 Traffic analysis means watching and studying how data moves around a network to spot problems or bad stuff happening. It helps keep things running smoothly and detects any sneaky or dangerous activity.
 
 #### The two main techniques used in Traffic Analysis:
-|Flow Analysis | Packet Analysis |
-| -------------- | -------------- |
-|It's about gathering data from network devices to get statistics without diving into every single detail. |   This is about grabbing all network data and deeply investigating each packet to catch and block any suspicious or harmful ones |
-| Advantage: Easy to collect and analyse. | Advantage: Provides full packet details to get the root cause of a case.|
-| Challenge: Doesn't provide full packet details to get the root cause of a case. | Challenge: Requires time and skillset to analyse. |
+![alt text](../Image/TAE_difference.png)
 
 #### Benefits of the Traffic Analysis:
 - Gives a clear view of the whole network.
