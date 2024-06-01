@@ -112,3 +112,26 @@ There are two main types of locks that can be used in a database:
 **Shared latches:** Allow multiple transactions to read a resource but prevent modifications.
 
 **Exclusive latches:** Block other transactions from accessing or modifying a resource.
+
+### Difference between Locks and Latches
+### Difference between Locks and Latches
+
+| **Locks**                                   | **Latches**                                    |
+|---------------------------------------------|------------------------------------------------|
+| Control access to data items                | Control access to system resources             |
+| Prevent other transactions from accessing a data item | Prevent other transactions from accessing system resources |
+| Manage simultaneous transactions            | Manage system resources                        |
+
+
+
+### Conclusion 
+In this flipped class, we discussed the importance of concurrency control in database management systems. We covered different methods, including Two-Phase Locking, Timestamp Ordering, and Locks and Latches.These mechanisms are crucial for data consistency and integrity in databases.
+
+
+
+
+
+
+
+
+
