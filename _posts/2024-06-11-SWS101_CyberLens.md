@@ -86,4 +86,4 @@ I created a folder called **root** and paste the encrypted key i just got.Then I
 
 ![alt text](<../Image/CTF/brute_it/Screenshot 2024-06-11 at 8.06.17 PM.png>)
 
-following the privious step that i did on the user flag I got the root flag.
+following the previous step that i did on the user flag I got the root flag.
