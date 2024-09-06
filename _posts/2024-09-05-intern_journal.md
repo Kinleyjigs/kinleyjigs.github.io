@@ -1,6 +1,6 @@
 ---
 Title: Intern Journal at iBEST
-categories: [INTERN, day1]
+categories: [INTERN, day2]
 tags: INTERN JOURNAL
 ---
 ##### DATE:5/9/2024
