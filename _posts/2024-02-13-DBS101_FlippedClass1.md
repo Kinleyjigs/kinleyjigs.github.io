@@ -2,7 +2,9 @@
 Title: DBS101 Flipped class 
 categories: [DBS101, Flipped class]
 tags: DBS 101
----
+image: "../../assets/images/nmap/nmap.png"
+
+`---
 ### Database Users and Administators
 ----
 In my last flipped class that was on feb 13  I learned about the types of database users and the DBA (database administator)  
